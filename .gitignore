@@ -1,0 +1,133 @@
+###############################
+# OS / Editor
+###############################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.history
+.svn/
+.atom/
+.buildlog/
+*.swp
+*.log
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+###############################
+# Flutter / Dart / Pub
+###############################
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub/
+.pub-cache/
+build/
+**/doc/api/
+
+# Flutter iOS/macOS ephemeral
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/macos/Flutter/ephemeral/
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+
+###############################
+# Android
+###############################
+android/local.properties
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+###############################
+# iOS
+###############################
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/Pods/
+**/ios/**/.symlinks/
+**/ios/**/profile
+**/ios/**/xcuserdata/
+**/ios/.generated/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/ServiceDefinitions.json
+
+# Exceptions to above rules.
+!**/ios/**/default.mode1v3
+!**/ios/**/default.mode2v3
+!**/ios/**/default.pbxuser
+!**/ios/**/default.perspectivev3
+
+###############################
+# Web
+###############################
+build/web/screen_*.html
+
+###############################
+# Coverage
+###############################
+coverage/
+
+###############################
+# Local config / Environment
+###############################
+.env
+.env.*
+*.env
+*.local
+*.secrets.*
+*.secret
+
+###############################
+# Signing & private keys (do NOT commit)
+###############################
+key.properties
+*.jks
+*.keystore
+*.keystore.properties
+*.p12
+upload-keystore.jks
+
+###############################
+# Crash symbol/obfuscation outputs
+###############################
+app.*.symbols
+app.*.map.json
+
+###############################
+# Project-specific output/assets to avoid committing by accident
+###############################
+final_release_google_play_store/
+
+###############################
+# Temporary files
+###############################
+*.tmp
+*.temp
+*~

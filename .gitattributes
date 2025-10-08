@@ -1,0 +1,17 @@
+# Normalize line endings and treat common text files as text
+* text=auto eol=lf
+
+# Keep images and binary assets as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.jar binary
+*.keystore binary
+*.jks binary
+
+# Dart/Flutter generated code can be large diffs; mark as linguistically Dart
+*.dart linguist-language=Dart
