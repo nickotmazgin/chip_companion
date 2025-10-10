@@ -3,6 +3,11 @@
 Effective Date: 2025-09-27
 Application: Chip Companion
 
+## Data Controller
+
+Controller: Nick Otmazgin (Developer of Chip Companion)
+Jurisdiction: Global distribution via Apple App Store and Google Play
+
 ## Overview
 
 Chip Companion is a professional offline microchip validation tool and registry directory. It does not collect, transmit, sell, or share personal data. All functionality (format validation, registry directory, scanning features) runs locally on the device.
@@ -48,6 +53,13 @@ We intentionally design the app to avoid personal data collection. The only stor
 - No remote logging or telemetry.
 - Links the user taps (e.g., registry websites) open via system browser; we do not monitor that activity.
 - External website access is user-initiated and controlled by the user's browser.
+
+## App Permissions (Platforms)
+
+- Bluetooth: used solely to communicate with compatible external scanners; no data is collected or transmitted by the app
+- NFC: used solely to read tags on-device for immediate validation; no data is stored or sent
+- Internet/Network: not used by the app for API calls; your device's browser may be opened when you choose to visit external registry websites
+- Local storage: used only to save language preference and Pro purchase status
 
 ## Legal Basis & International Compliance
 
@@ -114,6 +126,8 @@ If functionality changes to include any data processing, this policy will be upd
 ## Contact
 
 For questions or concerns, open an issue in the official repository or contact the developer via the distribution platform listing.
+
+Contact email: Refer to the contact information listed on the app’s store listing. If you require a dedicated address in this document, replace this line with your preferred contact email.
 
 ---
 
