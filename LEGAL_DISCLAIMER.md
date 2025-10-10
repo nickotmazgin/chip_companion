@@ -16,6 +16,8 @@ All mentioned pet registry names, microchip manufacturer names, and related trad
 
 This app is not affiliated with, endorsed by, or sponsored by any of these organizations. Registry names are used solely for factual reference and professional directory purposes.
 
+No endorsement or sponsorship is expressed or implied. All third-party trademarks are used nominatively.
+
 ## Monetization Model
 
 Chip Companion uses a Freemium model: the app is free to download and use for core features, with an optional one-time Pro upgrade purchased through the app stores to unlock Bluetooth and NFC scanning features.
@@ -57,7 +59,7 @@ This app does NOT:
 ## Scanner Support & Hardware
 
 - **Bluetooth Scanner Support**: This app supports Bluetooth HID (Human Interface Device) profile scanners that act as external keyboards
-- **NFC Scanning**: This app can read NFC-enabled microchip tags using the device's built-in NFC reader
+- **NFC Scanning**: This app can read NFC-enabled tags using the device's built-in NFC reader. It supports NFC NDEF tags (e.g., collars/cards/stickers) that embed the chip ID in text or a URL. Phone NFC (13.56 MHz) typically cannot read implanted ISO 11784/11785 FDX‑B (134.2 kHz) pet microchips; those require an external 134.2 kHz reader.
 - **Hardware Compatibility**: Scanner support is provided for compatible Bluetooth devices only
 - **No Hardware Manufacturing**: We do not manufacture scanners and cannot guarantee compatibility with all models
 - **Third-Party Devices**: External scanners and NFC tags are manufactured by third parties
@@ -93,6 +95,8 @@ This app does NOT:
 - Not responsible for any damages or losses
 - Users assume all responsibility for their use of the information
 
+To the maximum extent permitted by law, the app and all information are provided "as is" without warranties of any kind, express or implied, including but not limited to merchantability, fitness for a particular purpose, title, and non-infringement. Some jurisdictions do not allow the exclusion of implied warranties, so these exclusions may not apply to you.
+
 ## Geographic Limitations
 
 - Registry information may not be available for all regions
@@ -107,3 +111,5 @@ This app does NOT:
 - Continued use constitutes acceptance of any changes
 
 By using this app, you acknowledge that you have read, understood, and agree to these disclaimers and limitations.
+
+If you do not agree, do not use the application.
