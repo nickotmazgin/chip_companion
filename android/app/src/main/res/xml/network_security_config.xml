@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Enforce HTTPS for all network connections -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">petmicrochiplookup.org</domain>
+        <domain includeSubdomains="true">www.petmicrochiplookup.org</domain>
+    </domain-config>
+    
+    <!-- Block all cleartext traffic by default -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Trust system CAs -->
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+</network-security-config>

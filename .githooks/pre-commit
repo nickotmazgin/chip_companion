@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Blocks commits that include sensitive files.
+# This runs automatically on commit if core.hooksPath points to .githooks.
+
+mapfile -t STAGED < <(git diff --cached --name-only)
+
+BLOCKED=()
+for f in "${STAGED[@]}"; do
+  case "$f" in
+    # Gradle signing properties (contains passwords)
+    key.properties|*/key.properties)
+      BLOCKED+=("$f") ;;
+    # Keystores
+    *.jks|*/*.jks|*.keystore|*/*.keystore)
+      BLOCKED+=("$f") ;;
+    # Local Android config (SDK paths, local values)
+    android/local.properties|*/android/local.properties)
+      BLOCKED+=("$f") ;;
+  esac
+done
+
+if (( ${#BLOCKED[@]} > 0 )); then
+  echo "\nERROR: Commit blocked. Sensitive files are staged:" >&2
+  for f in "${BLOCKED[@]}"; do
+    echo "  - $f" >&2
+  done
+  echo "\nTo fix: remove them from the commit (they should remain untracked):" >&2
+  for f in "${BLOCKED[@]}"; do
+    echo "  git restore --staged -- \"$f\"" >&2
+  done
+  echo "\nThese files are intentionally ignored by .gitignore to prevent leaks." >&2
+  exit 1
+fi
+
+exit 0

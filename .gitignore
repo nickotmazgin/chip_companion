@@ -23,6 +23,15 @@ Thumbs.db
 .vscode/
 
 ###############################
+# Python virtualenvs and caches
+###############################
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+
+###############################
 # Flutter / Dart / Pub
 ###############################
 .dart_tool/
@@ -112,7 +121,14 @@ key.properties
 *.keystore
 *.keystore.properties
 *.p12
+*.pem
 upload-keystore.jks
+**/keystore*
+**/*.keystore
+
+# Google services configuration (API keys)
+**/GoogleService-Info.plist
+**/google-services.json
 
 ###############################
 # Crash symbol/obfuscation outputs
@@ -124,6 +140,7 @@ app.*.map.json
 # Project-specific output/assets to avoid committing by accident
 ###############################
 final_release_google_play_store/
+assets/screenshots/
 
 ###############################
 # Temporary files

@@ -1,8 +1,10 @@
 # 🐾 Chip Companion
 
-[![Flutter](https://img.shields.io/badge/Flutter-3.35.4-blue.svg)](https://flutter.dev/)
-[![Dart](https://img.shields.io/badge/Dart-3.9.2-blue.svg)](https://dart.dev/)
-[![Platform](https://img.shields.io/badge/Platform-Multi--Platform-green.svg)](https://flutter.dev/)
+[![Flutter](https://img.shields.io/badge/Flutter-3.35.4+-02569B?logo=flutter)](https://flutter.dev/)
+[![Dart](https://img.shields.io/badge/Dart-3.9.2+-0175C2?logo=dart)](https://dart.dev/)
+[![Version](https://img.shields.io/badge/Version-2.0.6--build.8-blue)](https://github.com/nickotmazgin/chip_companion/releases)
+[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Web-green)](https://flutter.dev/)
+[![Offline](https://img.shields.io/badge/Mode-100%25%20Offline-success)](OFFLINE_MODE_POLICY.md)
 
 **Professional pet microchip validator with Bluetooth and NFC scanning capabilities.**
 
@@ -36,6 +38,7 @@ Registry names mentioned are trademarks of their respective owners. This app is 
 - **Chip Type Detection** - Identify ISO, AVID, HomeAgain, and other formats (Free)
 - **Enhanced Results** - Detailed chip information with manufacturer hints and next steps (Free)
 - **Multi-Language Support** - Available in English, Spanish, French, Hebrew, and Russian (Free)
+ - **NFC NDEF Tag Support** - If an NFC tag (collar/card) encodes a chip ID in text/URL, Chip Companion extracts it, fills the Home input, and validates. Implanted chips still require 134.2 kHz readers.
 
 ### 💎 **Pro Features** (One-time purchase)
 
@@ -119,10 +122,10 @@ flutter run
 
 ### 📡 **NFC Scanning**
 
-- **Native Reader** - Use your phone's built-in NFC reader
-- **Modern Chips** - Scan NFC-enabled microchip tags
-- **One-Tap Scanning** - Simple tap-to-scan interface
-- **Format Detection** - Automatically extract and validate chip data
+- **Native Reader** - Use your phone's built-in NFC reader (13.56 MHz)
+- **Important** - Phone NFC typically cannot read implanted ISO 11784/11785 (FDX‑B 134.2 kHz) pet microchips
+- **Works With** - NFC NDEF tags (e.g., collars/cards/stickers) that contain the chip ID in text or a URL. From Devices, tap “Scan with NFC”: if a tag contains an ID, the app extracts it, populates Home, and validates it for you.
+	- Implanted FDX‑B chips still require an external 134.2 kHz reader.
 
 ### 🔒 **Privacy & Security**
 
@@ -143,12 +146,19 @@ flutter run
 
 ---
 
-## License & Policies
+## 📚 Documentation
 
-- License: MIT (see LICENSE)
-- Privacy: See PRIVACY_POLICY.md
-- Security: See SECURITY.md
-- Legal: See LEGAL_DISCLAIMER.md
+- **[Privacy Policy](PRIVACY_POLICY.md)** - How we handle your data (spoiler: we don't collect any)
+- **[Legal Disclaimer](LEGAL_DISCLAIMER.md)** - Terms, trademarks, and limitations
+- **[Security Policy](SECURITY.md)** - Security measures and vulnerability reporting
+- **[Offline Mode Policy](OFFLINE_MODE_POLICY.md)** - How 100% offline operation works
+- **[Tester Guide](TESTER_GUIDE.md)** - Testing scenarios for BLE, NFC, and IAP
+- **[Store Listing](STORE_LISTING.md)** - Google Play Store listing details
+- **[Permissions Reference](PERMISSIONS_REFERENCE.md)** - Complete permissions breakdown
+
+## License & Compliance
+
+- License: Proprietary (see LICENSE)
 - Compliance: See FINAL_COMPLIANCE_REPORT.md
 
 ---
@@ -162,6 +172,8 @@ If you'd like to support ongoing development, you can leave a tip here:
 ## 🚀 Ready for Release
 
 ✅ **Fully compliant for international release** - See [FINAL_COMPLIANCE_REPORT.md](FINAL_COMPLIANCE_REPORT.md) for complete verification.
+
+Note on media: Store screenshots are kept locally and uploaded directly to consoles; they are intentionally not committed to this repository to keep history lean.
 
 ---
 
