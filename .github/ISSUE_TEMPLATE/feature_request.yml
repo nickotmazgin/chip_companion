@@ -1,0 +1,61 @@
+name: Feature request
+description: Suggest an improvement or new feature
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! Please describe your idea in detail below.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Is your feature request related to a problem? What are you trying to accomplish?
+      placeholder: "I'm frustrated when... / I wish I could... / It would be helpful to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How do you think this feature should work? Describe your ideal implementation.
+      placeholder: "The app should... / A new screen that... / A button to..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Critical (can't use the app without it)
+        - High (would use it frequently)
+        - Medium (nice to have)
+        - Low (minor enhancement)
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you considered any alternative solutions or workarounds?
+      placeholder: "I've tried... / Another option would be..."
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use case
+      description: When and how would you use this feature? Provide a real-world example.
+      placeholder: "I would use this when... / For example..."
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Add any other context, mockups, or examples about the feature request here.
+      placeholder: "Similar to... / Like in app XYZ... / Here's a mockup..."
+

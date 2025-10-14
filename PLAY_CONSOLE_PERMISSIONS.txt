@@ -1,0 +1,170 @@
+================================================================================
+GOOGLE PLAY CONSOLE - PERMISSION DECLARATIONS
+Chip Companion - Pet Microchip Validator
+================================================================================
+
+Copy-paste these justifications into the Play Console when prompted about 
+each permission.
+
+================================================================================
+BLUETOOTH_CONNECT
+================================================================================
+
+Used to establish connections with external Bluetooth Low Energy (BLE) pet 
+microchip scanners. This allows the app to receive scanned chip data from 
+compatible scanning hardware. All processing is done locally on the device; 
+no data is transmitted to external servers.
+
+
+================================================================================
+BLUETOOTH_SCAN (with neverForLocation flag)
+================================================================================
+
+Used to discover nearby Bluetooth Low Energy (BLE) pet microchip scanners 
+for pairing. The neverForLocation flag is set because this app does NOT use 
+Bluetooth for location purposes.
+
+Scanning is used solely to identify compatible scanner devices for chip 
+validation. On Android 11 and lower (SDK ≤30), ACCESS_FINE_LOCATION is 
+required by the Android platform for BLE discovery, but it is not used for 
+location tracking or position determination.
+
+All scanned data is processed locally; no data is stored or transmitted.
+
+
+================================================================================
+ACCESS_FINE_LOCATION (maxSdkVersion="30")
+================================================================================
+
+This permission is ONLY requested on Android 11 and lower (SDK ≤30) as a 
+platform requirement for Bluetooth Low Energy device discovery. On Android 12+ 
+(SDK 31+), this permission is NOT requested at all.
+
+This app does NOT use this permission for location tracking, geolocation, or 
+any location-based features. The sole purpose is to enable BLE scanner 
+discovery on older Android versions.
+
+All microchip validation is performed offline and locally. No location data 
+is collected, stored, or transmitted.
+
+
+================================================================================
+NFC
+================================================================================
+
+Used to read Near Field Communication (NFC) tags containing pet microchip 
+identifiers. The app validates chip format and displays registry information. 
+All processing is done locally; no data is transmitted to external servers.
+
+
+================================================================================
+ACCESS_NETWORK_STATE
+================================================================================
+
+Used to check network availability before allowing optional external lookups 
+via URL launcher (opens external browser). The app does NOT make direct 
+network requests; all network access is through the user's browser via 
+url_launcher.
+
+This permission helps provide a better user experience by detecting if a 
+network connection is available before attempting to open a registry lookup 
+URL.
+
+
+================================================================================
+DATA SAFETY FORM - SUMMARY
+================================================================================
+
+Does your app collect or share user data?
+→ NO
+
+Data is encrypted in transit:
+→ N/A (no data transmission)
+
+Users can request data deletion:
+→ N/A (no data collected)
+
+All data types:
+→ NOT COLLECTED
+
+Privacy Policy URL:
+→ [Your GitHub Pages URL or public docs URL]
+
+
+================================================================================
+STORE LISTING - SHORT DESCRIPTION
+================================================================================
+
+Professional pet microchip validator with offline format checking for 
+veterinarians, shelters, and pet owners. Supports ISO, AVID, and legacy 
+formats. No data collection.
+
+
+================================================================================
+STORE LISTING - FULL DESCRIPTION (EXCERPT)
+================================================================================
+
+Chip Companion is a professional offline pet microchip validator designed 
+for veterinarians, animal shelters, rescue organizations, and pet owners.
+
+✓ Offline validation (no internet required)
+✓ Supports ISO 11784/11785, AVID 10-digit, and legacy 9-digit formats
+✓ Compatible with Bluetooth and NFC scanners
+✓ No data collection or telemetry
+✓ No ads, no tracking, fully private
+
+HOW IT WORKS:
+1. Scan chip using NFC or paired Bluetooth scanner
+2. App validates format and identifies chip standard
+3. View registry suggestions for chip registration lookup
+4. Optionally open registry websites in your browser
+
+PRIVACY:
+All microchip validation is performed locally on your device. The app does 
+NOT collect, store, or transmit any personal data. No analytics or tracking.
+
+BLUETOOTH & NFC:
+- Bluetooth: Connect to external BLE pet microchip scanners
+- NFC: Read NDEF tags containing chip IDs
+- Location permission (Android ≤11 only): Required by Android OS for BLE 
+  discovery; NOT used for location tracking
+
+PROFESSIONAL USE:
+Ideal for veterinary clinics, animal shelters, rescue groups, and 
+professional pet services needing quick chip format verification.
+
+
+================================================================================
+NOTES FOR APP REVIEW
+================================================================================
+
+TESTING INSTRUCTIONS:
+The app can be fully tested without physical scanner hardware by manually 
+entering test chip IDs on the home screen:
+
+Test IDs:
+• 15-digit ISO: 982000123456789
+• 10-digit AVID: 1234567890
+• 9-digit legacy: 123456789
+
+The app will validate format, display chip type, and show registry suggestions.
+
+PERMISSIONS:
+• Bluetooth: Used only for connecting to external BLE scanners; no location 
+  tracking
+• NFC: Used only for reading NDEF chip tags
+• Network State: Used only to check connectivity before opening external 
+  URLs in browser
+
+NO INTERNET PERMISSION:
+This app does NOT request the INTERNET permission. All lookups are performed 
+by launching the user's external browser (via url_launcher).
+
+PRIVACY:
+No data collection, no analytics, no telemetry. Fully offline processing.
+
+
+================================================================================
+END OF PERMISSION DECLARATIONS
+================================================================================
+

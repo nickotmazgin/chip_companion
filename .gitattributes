@@ -1,17 +1,79 @@
-# Normalize line endings and treat common text files as text
-* text=auto eol=lf
+# Auto detect text files and normalize line endings
+* text=auto
 
-# Keep images and binary assets as binary
+# Source code
+*.dart text diff=dart
+*.java text diff=java
+*.kt text diff=kotlin
+*.swift text diff=swift
+*.h text
+*.m text
+*.cc text
+*.cpp text
+*.c text
+
+# Configuration files
+*.yaml text
+*.yml text
+*.json text
+*.xml text
+*.gradle text
+*.properties text
+*.plist text
+*.xcconfig text
+
+# Scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+*.fish text eol=lf
+*.py text eol=lf
+
+# Windows scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Documentation
+*.md text
+*.txt text
+LICENSE text
+README text
+CHANGELOG text
+
+# Graphics
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.gif binary
 *.ico binary
-*.pdf binary
-*.zip binary
-*.jar binary
-*.keystore binary
-*.jks binary
+*.svg text
 
-# Dart/Flutter generated code can be large diffs; mark as linguistically Dart
-*.dart linguist-language=Dart
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
+*.jar binary
+*.aar binary
+*.aab binary
+*.apk binary
+
+# Fonts
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+
+# Keystores and certificates (binary, never commit)
+*.jks binary
+*.keystore binary
+*.p12 binary
+*.pem binary
+
+# Other binary formats
+*.pdf binary
+*.so binary
+*.dylib binary
+*.a binary
