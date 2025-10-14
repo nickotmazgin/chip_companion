@@ -2,7 +2,7 @@
 
 All notable changes to Chip Companion will be documented in this file.
 
-## [2.0.6] - Build 8 - 2025-10-13
+## [2.0.6] - Build 9 - 2025-10-13
 
 ### 🔒 Security & Compliance Hardening
 

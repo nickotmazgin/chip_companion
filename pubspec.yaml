@@ -1,7 +1,7 @@
 name: chip_companion
 description: Professional pet microchip validator with Bluetooth and NFC scanning capabilities
 publish_to: 'none'
-version: 2.0.6+8
+version: 2.0.6+9
 
 environment:
   sdk: '>=3.9.2 <4.0.0'
