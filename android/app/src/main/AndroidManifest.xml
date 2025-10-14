@@ -20,6 +20,11 @@
     <uses-feature android:name="android.hardware.bluetooth_le" android:required="false" tools:node="replace"/>
     <uses-feature android:name="android.hardware.nfc" android:required="false" tools:node="replace"/>
     <uses-feature android:name="android.hardware.nfc.hce" android:required="false" tools:node="replace"/>
+    <!-- Legacy Location features made optional for Android ≤ 30 so Play does not
+         exclude tablets that lack GPS/network location but can still run the app. -->
+    <uses-feature android:name="android.hardware.location" android:required="false" tools:node="replace"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false" tools:node="replace"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" tools:node="replace"/>
     
     <application
         android:label="Chip Companion"

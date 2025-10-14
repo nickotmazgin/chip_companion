@@ -158,21 +158,7 @@ async def run_scenarios(
             await page.goto(sc["url"], wait_until="networkidle", timeout=30000)
             await page.wait_for_timeout(15000)
 
-            # Apply a gentle zoom for phone portrait to reduce
-            # bottom whitespace only when DPR == 1 (when DPR > 1,
-            # content density is already appropriate)
-            try:
-                if (
-                    device == "phone"
-                    and orient == "portrait"
-                    and float(dpr) == 1.0
-                ):
-                    await page.evaluate(
-                        "document.body.style.zoom='1.12'"
-                    )
-                    await page.wait_for_timeout(300)
-            except Exception:
-                pass
+            # Removed CSS zoom hack to prevent edge artifacts. Rely on DPR.
 
             for action, value in sc.get("actions", []):
                 if action == "ensure_home":
@@ -439,14 +425,15 @@ async def run_scenarios(
             await page.screenshot(path=str(path))
 
             with Image.open(path) as img:
-                # No post-crop: we preserve full viewport to keep
-                # background and nav
+                # Preserve full viewport; avoid artifacts. Only micro-resize
+                # if off-by-≤2px to hit exact store-required dimensions.
                 img2 = img.convert("RGB")
-                if img2.size != (dims["width"], dims["height"]):
-                    img2 = img2.resize(
-                        (dims["width"], dims["height"]),
-                        Image.Resampling.LANCZOS,
-                    )
+                dw, dh = dims["width"], dims["height"]
+                if (
+                    abs(img2.width - dw) <= 2 and abs(img2.height - dh) <= 2
+                ):
+                    if (img2.width, img2.height) != (dw, dh):
+                        img2 = img2.resize((dw, dh), Image.Resampling.LANCZOS)
                 img2.save(path, "PNG")
 
             with Image.open(path) as final_img:
