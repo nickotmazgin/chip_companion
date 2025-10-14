@@ -1,5 +1,7 @@
 # 🐾 Chip Companion
 
+> **📄 Documentation Repository** - This is a **documentation-only** repository. The source code is kept private for security and intellectual property reasons.
+
 [![Flutter](https://img.shields.io/badge/Flutter-3.35.4-blue.svg)](https://flutter.dev/)
 [![Dart](https://img.shields.io/badge/Dart-3.9.2-blue.svg)](https://dart.dev/)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-green.svg)](https://flutter.dev/)
