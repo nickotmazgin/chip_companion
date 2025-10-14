@@ -42,6 +42,8 @@ __pycache__/
 .pub-cache/
 build/
 **/doc/api/
+*.aab
+*.apk
 
 # Flutter iOS/macOS ephemeral
 **/ios/Flutter/.last_build_id
@@ -125,10 +127,14 @@ key.properties
 upload-keystore.jks
 **/keystore*
 **/*.keystore
+android/app/*.keystore
+android/key.properties
 
 # Google services configuration (API keys)
 **/GoogleService-Info.plist
 **/google-services.json
+ios/Runner/GoogleService-Info.plist
+android/app/google-services.json
 
 ###############################
 # Crash symbol/obfuscation outputs

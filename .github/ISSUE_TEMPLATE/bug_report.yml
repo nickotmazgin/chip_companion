@@ -1,0 +1,102 @@
+name: Bug report
+description: Report a bug or unexpected behavior
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the form below with as much detail as possible.
+
+  - type: input
+    id: device
+    attributes:
+      label: Device model
+      description: What device are you using?
+      placeholder: "e.g., Samsung Galaxy S23, Google Pixel 7"
+    validations:
+      required: true
+
+  - type: input
+    id: android
+    attributes:
+      label: Android version
+      description: What version of Android are you running?
+      placeholder: "e.g., Android 14, Android 12"
+    validations:
+      required: true
+
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+      description: Check Settings → About for the version number
+      placeholder: "e.g., 2.0.7 (11)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce this bug? Please be as detailed as possible.
+      placeholder: |
+        1. Go to '...'
+        2. Tap on '...'
+        3. Enter chip ID '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: What did you expect to happen?
+      placeholder: "The app should..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: What actually happened?
+      placeholder: "Instead, the app..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does this happen?
+      options:
+        - Every time
+        - Sometimes
+        - Only once
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Screenshots / logs
+      description: |
+        If applicable, add screenshots or screen recordings to help explain the problem.
+        Tip: You can attach images by dragging & dropping into this field.
+      placeholder: Drag and drop images here...
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here (e.g., related features, workarounds you've tried).
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Privacy
+      description: Please confirm you have not included sensitive personal information (email, phone, real chip IDs).
+      options:
+        - label: I have not included sensitive personal information in this report
+          required: true
+

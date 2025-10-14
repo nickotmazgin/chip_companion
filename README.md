@@ -2,7 +2,7 @@
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.35.4+-02569B?logo=flutter)](https://flutter.dev/)
 [![Dart](https://img.shields.io/badge/Dart-3.9.2+-0175C2?logo=dart)](https://dart.dev/)
-[![Version](https://img.shields.io/badge/Version-2.0.7--build.10-blue)](https://github.com/nickotmazgin/chip_companion/releases)
+[![Version](https://img.shields.io/badge/Version-2.0.7--build.11-blue)](https://github.com/nickotmazgin/chip_companion/releases)
 [![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Web-green)](https://flutter.dev/)
 [![Offline](https://img.shields.io/badge/Mode-100%25%20Offline-success)](OFFLINE_MODE_POLICY.md)
 
@@ -160,6 +160,30 @@ flutter run
 
 - License: Proprietary (see LICENSE)
 - Compliance: See FINAL_COMPLIANCE_REPORT.md
+
+---
+
+## 🧪 Closed Test – How to Join
+
+Chip Companion is currently in **closed testing** on Google Play. Help us make it better!
+
+### How to Join:
+
+1. **Request access** by emailing: `NickOtmazgin.Dev@gmail.com` with subject "Chip Companion Tester"
+2. **Opt-in** to the closed test: [Google Play Testing Program](https://play.google.com/apps/testing/com.chipcompanion.app.chip_companion)
+3. **Install** from the Play Store: [Chip Companion](https://play.google.com/store/apps/details?id=com.chipcompanion.app.chip_companion)
+4. **Give feedback** in [GitHub Discussions](https://github.com/nickotmazgin/chip_companion/discussions) or file bugs using our [issue templates](https://github.com/nickotmazgin/chip_companion/issues/new/choose)
+
+### What to Test:
+
+- ✅ Microchip ID validation (9, 10, 15-digit formats)
+- ✅ Language switching (English, Spanish, French, Hebrew, Russian)
+- ✅ NFC scanning (if your device supports NFC)
+- ✅ Bluetooth scanner pairing (if you have a compatible HID scanner)
+- ✅ Registry directory browsing and external links
+- ✅ In-app purchase flow (restore purchases)
+
+📖 **Full testing guide**: [docs/testers.md](docs/testers.md)
 
 ---
 
