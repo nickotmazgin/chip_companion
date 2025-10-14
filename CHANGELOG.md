@@ -2,6 +2,16 @@
 
 All notable changes to Chip Companion will be documented in this file.
 
+## [2.0.7] - Build 10 - 2025-10-14
+
+### Android 15 + Tablet Eligibility
+- **Target API 35 (Android 15)** - Updated to latest Android target
+- **Tablet support restored** - NFC/BLE/NFC HCE marked optional to support tablets without these features
+- **Dynamic version display** - Version now shown dynamically via package_info_plus
+- **Documentation sync** - All MD files updated with correct version and repo links
+- **Localization polish** - Version display improvements across all languages
+- **Still 100% offline** - No INTERNET permission; browser hand-off only for external lookups
+
 ## [2.0.6] - Build 9 - 2025-10-13
 
 ### 🔒 Security & Compliance Hardening

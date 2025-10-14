@@ -294,7 +294,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get errorOpeningPaypal => 'שגיאה בפתיחת PayPal';
 
   @override
-  String get version => 'גרסה 2.0.6';
+  String get version => 'גרסה';
 
   @override
   String get developerEmail => 'NickOtmazgin.Dev@gmail.com';

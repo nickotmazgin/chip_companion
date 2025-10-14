@@ -20,7 +20,7 @@ echo ""
 
 echo "📦 Getting dependencies..."
 flutter pub get
-echo ""
+    echo ""
 
 # Run analyzer
 echo "🔍 Running analyzer..."
@@ -86,8 +86,8 @@ echo ""
 echo "=================================="
 echo "✅ All preflight checks passed!"
 echo "=================================="
-echo ""
+    echo ""
 echo "AAB location: $AAB_PATH"
 echo "Size: $(du -h $AAB_PATH | cut -f1)"
-echo ""
+    echo ""
 echo "Ready for closed testing!"

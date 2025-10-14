@@ -302,7 +302,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get errorOpeningPaypal => 'Ошибка открытия PayPal';
 
   @override
-  String get version => 'Версия 2.0.6';
+  String get version => 'Версия';
 
   @override
   String get developerEmail => 'NickOtmazgin.Dev@gmail.com';

@@ -2,7 +2,7 @@
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.35.4+-02569B?logo=flutter)](https://flutter.dev/)
 [![Dart](https://img.shields.io/badge/Dart-3.9.2+-0175C2?logo=dart)](https://dart.dev/)
-[![Version](https://img.shields.io/badge/Version-2.0.6--build.9-blue)](https://github.com/nickotmazgin/chip_companion/releases)
+[![Version](https://img.shields.io/badge/Version-2.0.7--build.10-blue)](https://github.com/nickotmazgin/chip_companion/releases)
 [![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Web-green)](https://flutter.dev/)
 [![Offline](https://img.shields.io/badge/Mode-100%25%20Offline-success)](OFFLINE_MODE_POLICY.md)
 

@@ -365,9 +365,9 @@
   "@errorOpeningPaypal": {
     "description": "Error message when PayPal fails to open"
   },
-  "version": "Version 2.0.6",
+  "version": "Version",
   "@version": {
-    "description": "App version number"
+    "description": "App version label (dynamic number shown via PackageInfo)"
   },
   "developerEmail": "NickOtmazgin.Dev@gmail.com",
   "@developerEmail": {

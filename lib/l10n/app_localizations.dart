@@ -650,10 +650,10 @@ abstract class AppLocalizations {
   /// **'Error opening PayPal'**
   String get errorOpeningPaypal;
 
-  /// App version number
+  /// App version label (dynamic number shown via PackageInfo)
   ///
   /// In en, this message translates to:
-  /// **'Version 2.0.6'**
+  /// **'Version'**
   String get version;
 
   /// Developer email address

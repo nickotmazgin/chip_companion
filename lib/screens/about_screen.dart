@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:chip_companion/l10n/app_localizations.dart';
 import 'package:chip_companion/widgets/tree_background.dart';
 import 'package:chip_companion/widgets/tree_ui_components.dart';
+import 'package:chip_companion/services/version_service.dart';
 
 class AboutScreen extends StatefulWidget {
   const AboutScreen({super.key});
@@ -99,11 +100,16 @@ class _AboutScreenState extends State<AboutScreen> {
                 ),
               ),
               const SizedBox(height: 8),
-              Text(
-                l10n.version,
-                style: Theme.of(
-                  context,
-                ).textTheme.bodyLarge?.copyWith(color: Colors.grey[600]),
+              FutureBuilder<String>(
+                future: VersionService.getVersionString(l10n.version),
+                builder: (context, snapshot) {
+                  return Text(
+                    snapshot.data ?? l10n.version,
+                    style: Theme.of(
+                      context,
+                    ).textTheme.bodyLarge?.copyWith(color: Colors.grey[600]),
+                  );
+                },
               ),
               const SizedBox(height: 8),
               Text(

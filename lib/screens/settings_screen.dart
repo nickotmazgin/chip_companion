@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:chip_companion/l10n/app_localizations.dart';
 import 'package:chip_companion/services/settings_service.dart';
+import 'package:chip_companion/services/version_service.dart';
 import 'package:chip_companion/screens/about_screen.dart';
 import 'package:chip_companion/screens/help_screen.dart';
 import 'package:chip_companion/widgets/tree_background.dart';
@@ -226,7 +227,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ListTile(
                     leading: const Icon(Icons.pets, color: Color(0xFF2E7D32)),
                     title: Text(l10n.appTitle),
-                    subtitle: Text(l10n.version),
+                    subtitle: FutureBuilder<String>(
+                      future: VersionService.getVersionString(l10n.version),
+                      builder: (context, snapshot) {
+                        return Text(snapshot.data ?? l10n.version);
+                      },
+                    ),
                     contentPadding: EdgeInsets.zero,
                   ),
 

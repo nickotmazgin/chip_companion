@@ -1,4 +1,5 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
     <!-- Minimal permissions - only what's absolutely necessary -->
     <!-- NO INTERNET or NETWORK STATE - App is 100% offline -->
     
@@ -14,9 +15,11 @@
     <!-- NFC permissions for chip scanning -->
     <uses-permission android:name="android.permission.NFC" />
     
-    <!-- Required for Bluetooth and NFC -->
-    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
-    <uses-feature android:name="android.hardware.nfc" android:required="false" />
+    <!-- Hardware features - all OPTIONAL to support tablets without these features -->
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" tools:node="replace"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false" tools:node="replace"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false" tools:node="replace"/>
+    <uses-feature android:name="android.hardware.nfc.hce" android:required="false" tools:node="replace"/>
     
     <application
         android:label="Chip Companion"

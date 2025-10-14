@@ -6,6 +6,7 @@ import 'package:chip_companion/l10n/app_localizations.dart';
 import 'package:chip_companion/services/settings_service.dart';
 import 'package:chip_companion/services/purchase_service.dart';
 import 'package:chip_companion/services/microchip_lookup_service.dart';
+import 'package:chip_companion/services/version_service.dart';
 import 'package:chip_companion/widgets/chip_result_card.dart';
 import 'package:chip_companion/widgets/registry_info_card.dart';
 import 'package:chip_companion/widgets/tree_background.dart';
@@ -537,15 +538,20 @@ class _HomeScreenState extends State<HomeScreen> {
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 4),
-          Text(
-            l10n.version,
-            style: Theme.of(context).textTheme.bodySmall?.copyWith(
-              color: Theme.of(
-                context,
-              ).colorScheme.onSurfaceVariant.withValues(alpha: 0.6),
-              fontSize: 12,
-            ),
-            textAlign: TextAlign.center,
+          FutureBuilder<String>(
+            future: VersionService.getVersionString(l10n.version),
+            builder: (context, snapshot) {
+              return Text(
+                snapshot.data ?? l10n.version,
+                style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                  color: Theme.of(
+                    context,
+                  ).colorScheme.onSurfaceVariant.withValues(alpha: 0.6),
+                  fontSize: 12,
+                ),
+                textAlign: TextAlign.center,
+              );
+            },
           ),
         ],
       ),

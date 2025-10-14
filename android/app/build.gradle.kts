@@ -10,7 +10,7 @@ plugins {
 
 android {
     namespace = "com.nickotmazgin.chipcompanion"
-    compileSdk = 36
+    compileSdk = 35
     ndkVersion = "26.3.11579264"
 
     compileOptions {
@@ -26,7 +26,7 @@ android {
         // Unique Application ID for Chip Companion
         applicationId = "com.chipcompanion.app.chip_companion"
         minSdk = flutter.minSdkVersion
-        targetSdk = 34
+        targetSdk = 35
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
