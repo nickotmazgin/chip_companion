@@ -199,6 +199,48 @@ class SupportScreen extends StatelessWidget {
                       ),
                     ),
                   const SizedBox(height: 16),
+                  // Testing & Feedback Section
+                  TreeBackgroundCard(
+                    treeOpacity: 0.1,
+                    child: Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              const Icon(Icons.bug_report, color: Color(0xFF2E7D32)),
+                              const SizedBox(width: 8),
+                              Text(
+                                'Testing & Feedback',
+                                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                                      fontWeight: FontWeight.bold,
+                                      color: const Color(0xFF2E7D32),
+                                    ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 16),
+                          ListTile(
+                            leading: const Icon(Icons.feedback_outlined, color: Color(0xFF2E7D32)),
+                            title: const Text('Send testing feedback'),
+                            subtitle: const Text('Google Form (screenshots/video supported)'),
+                            trailing: const Icon(Icons.open_in_new),
+                            onTap: () => _openUrl(context, kFormUrl, 'Error opening feedback form'),
+                          ),
+                          const Divider(),
+                          ListTile(
+                            leading: const Icon(Icons.group_outlined, color: Color(0xFF2E7D32)),
+                            title: const Text('Tester discussion group'),
+                            subtitle: const Text('Q&A and announcements'),
+                            trailing: const Icon(Icons.open_in_new),
+                            onTap: () => _openUrl(context, kGroupUrl, 'Error opening tester group'),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
                   // Legal & Privacy Section
                   TreeBackgroundCard(
                     treeOpacity: 0.1,
@@ -222,7 +264,7 @@ class SupportScreen extends StatelessWidget {
                           ),
                           const SizedBox(height: 16),
                           ListTile(
-                            leading: const Icon(Icons.privacy_tip, color: Color(0xFF1976D2)),
+                            leading: const Icon(Icons.privacy_tip_outlined, color: Color(0xFF1976D2)),
                             title: const Text('Privacy Policy'),
                             subtitle: const Text('How we handle your data'),
                             trailing: const Icon(Icons.open_in_new),
@@ -230,7 +272,7 @@ class SupportScreen extends StatelessWidget {
                           ),
                           const Divider(),
                           ListTile(
-                            leading: const Icon(Icons.description, color: Color(0xFF1976D2)),
+                            leading: const Icon(Icons.gavel_outlined, color: Color(0xFF1976D2)),
                             title: const Text('Legal Disclaimer'),
                             subtitle: const Text('Terms and conditions'),
                             trailing: const Icon(Icons.open_in_new),
@@ -238,7 +280,7 @@ class SupportScreen extends StatelessWidget {
                           ),
                           const Divider(),
                           ListTile(
-                            leading: const Icon(Icons.security, color: Color(0xFF1976D2)),
+                            leading: const Icon(Icons.shield_outlined, color: Color(0xFF1976D2)),
                             title: const Text('Security'),
                             subtitle: const Text('Security practices and reporting'),
                             trailing: const Icon(Icons.open_in_new),

@@ -84,6 +84,49 @@ bundletool dump manifest --bundle=build/app/outputs/bundle/release/app-release.a
 
 ---
 
+## 🔗 Links Used in Play Console
+
+These links are used throughout the Play Console listing and should be consistent:
+
+### Tester Links
+
+- **Opt-in URL**: `https://play.google.com/apps/testing/com.chipcompanion.app.chip_companion`
+- **Feedback Form**: `https://forms.gle/dxXyizEu975v1xHd8`
+- **Tester Group**: `https://groups.google.com/g/chip-companion-testers`
+
+### Documentation Links
+
+- **Privacy Policy**: `https://github.com/nickotmazgin/chip_companion/blob/main/PRIVACY_POLICY.md`
+- **Legal Disclaimer**: `https://github.com/nickotmazgin/chip_companion/blob/main/LEGAL_DISCLAIMER.md`
+- **Security**: `https://github.com/nickotmazgin/chip_companion/blob/main/SECURITY.md`
+
+### Track Description (Closed Testing)
+
+Use this text in the "What's new in this release" or track description:
+
+```
+🧪 Closed Testing Track
+
+Thank you for helping test Chip Companion! This closed test helps us verify the app before public release.
+
+📝 Send feedback: https://forms.gle/dxXyizEu975v1xHd8 (supports screenshots/video)
+💬 Tester group: https://groups.google.com/g/chip-companion-testers
+
+What to test:
+✅ Microchip ID validation (9, 10, 15-digit formats)
+✅ Language switching (English, Spanish, French, Hebrew, Russian)
+✅ NFC scanning (if your device supports NFC)
+✅ Bluetooth scanner pairing (if you have a compatible HID scanner)
+✅ Registry directory browsing and external links
+✅ In-app purchase flow (restore purchases)
+
+🔒 Privacy: 100% offline, no analytics, no data collection.
+
+📚 Full guide: https://github.com/nickotmazgin/chip_companion/blob/main/docs/testers.md
+```
+
+---
+
 ## 📱 Google Play Console Submission
 
 ### Permissions Justification

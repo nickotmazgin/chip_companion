@@ -29,6 +29,25 @@ Registry names mentioned are trademarks of their respective owners. This app is 
 
 ---
 
+## 🧪 **Testing (Closed Beta)**
+
+Chip Companion is currently in closed testing. Join our beta program to help improve the app!
+
+### Quick Links
+
+- 🚀 **[Opt-in & install](https://play.google.com/apps/testing/com.chipcompanion.app.chip_companion)** – Join the testing program
+- 📝 **[Send feedback (form)](https://forms.gle/dxXyizEu975v1xHd8)** – Report bugs, suggest features (supports screenshots/video)
+- 💬 **[Tester discussion group](https://groups.google.com/g/chip-companion-testers)** – Q&A and announcements
+- 📚 **[Tester Guide](docs/testers.md)** – Complete testing instructions
+
+### Legal & Privacy
+
+- 🔒 **[Privacy Policy](https://github.com/nickotmazgin/chip_companion/blob/main/PRIVACY_POLICY.md)** – How we handle your data (spoiler: we don't collect any)
+- ⚖️ **[Legal Disclaimer](https://github.com/nickotmazgin/chip_companion/blob/main/LEGAL_DISCLAIMER.md)** – Terms, trademarks, and limitations
+- 🛡️ **[Security](https://github.com/nickotmazgin/chip_companion/blob/main/SECURITY.md)** – Security practices and vulnerability reporting
+
+---
+
 ## ✨ **Features**
 
 ### 🎯 **Core Functionality**

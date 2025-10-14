@@ -4,13 +4,17 @@ Need help with Chip Companion? Here's how to get support.
 
 ## 🧪 Closed Test Support
 
-### Testing Guide
-👉 **[Complete Tester Guide](docs/testers.md)** – Step-by-step instructions for joining the test, installing, and providing feedback.
+### Quick Links
+
+- 🚀 **[Opt-in & install](https://play.google.com/apps/testing/com.chipcompanion.app.chip_companion)** – Join the testing program
+- 📝 **[Send feedback (form)](https://forms.gle/dxXyizEu975v1xHd8)** – Report bugs, suggest features (supports screenshots/video)
+- 💬 **[Tester discussion group](https://groups.google.com/g/chip-companion-testers)** – Q&A and announcements
+- 📚 **[Complete Tester Guide](docs/testers.md)** – Step-by-step instructions for joining the test, installing, and providing feedback
 
 ### Common Questions
 
 **Q: How do I join the closed test?**  
-A: Email `NickOtmazgin.Dev@gmail.com` with subject "Chip Companion Tester", then opt-in via the [Google Play Testing Program](https://play.google.com/apps/testing/com.chipcompanion.app.chip_companion).
+A: Click the [opt-in link](https://play.google.com/apps/testing/com.chipcompanion.app.chip_companion), become a tester, then install from the Play Store.
 
 **Q: The app says "not available in your country". What do I do?**  
 A: The closed test may be region-locked. Email the developer to request access for your region.
@@ -68,9 +72,12 @@ Use email for:
 
 ## 🔒 Privacy & Security
 
+**No analytics; offline-only.**
+
 - **100% Offline**: Chip Companion does not have the `INTERNET` permission. All processing happens on your device.
-- **No Analytics**: No tracking, no data collection.
+- **No Analytics**: No tracking, no data collection, no third-party SDKs.
 - **No Accounts**: No sign-in required; no user data stored on servers.
+- **External Links Only**: Links to registries, privacy policies, and support open in your browser via secure hand-off.
 
 Read more: [Privacy Policy](PRIVACY_POLICY.md) | [Security](SECURITY.md)
 
@@ -80,6 +87,8 @@ Read more: [Privacy Policy](PRIVACY_POLICY.md) | [Security](SECURITY.md)
 
 Love the app? Have an idea? Let us know!
 
+- **Testing Feedback Form**: [Send Feedback (Google Form)](https://forms.gle/dxXyizEu975v1xHd8) – Supports screenshots/video
+- **Tester Discussion**: [Google Group](https://groups.google.com/g/chip-companion-testers) – Q&A and announcements
 - **General Feedback**: [GitHub Discussions](https://github.com/nickotmazgin/chip_companion/discussions)
 - **Feature Requests**: [Request a Feature](https://github.com/nickotmazgin/chip_companion/issues/new?template=feature_request.yml)
 
