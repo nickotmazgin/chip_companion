@@ -1,9 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-  - name: General Q&A / Test feedback
-    url: https://github.com/nickotmazgin/chip_companion/discussions
-    about: Use Discussions for general feedback, questions, and testing experience sharing.
-  - name: Email Support
-    url: mailto:NickOtmazgin.Dev@gmail.com
-    about: For private inquiries, purchase issues, or closed test access requests.
-

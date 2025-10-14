@@ -1,3 +1,0 @@
-Enable hooks with:
-  git init
-  git config core.hooksPath .githooks
