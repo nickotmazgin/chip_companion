@@ -29,6 +29,26 @@ Registry names mentioned are trademarks of their respective owners. This app is 
 
 ---
 
+## 🧪 **Closed Test (Android)**
+
+Chip Companion is currently in closed testing. Join our beta program to help improve the app!
+
+### Quick Links
+
+- 🚀 **[Opt-in & install](https://play.google.com/apps/testing/com.chipcompanion.app.chip_companion)** – Join the testing program
+- 📝 **[Send feedback (form)](https://forms.gle/dxXyizEu975v1xHd8)** – Report bugs, suggest features (supports screenshots/video)
+- 💬 **[Tester discussion group](https://groups.google.com/g/chip-companion-testers)** – Q&A and announcements
+
+### Documentation
+
+- 📚 **[Tester Guide](TESTER_GUIDE.md)** – Complete testing instructions
+- ❓ **[Testing FAQ](TESTING_FAQ.md)** – Common questions and troubleshooting
+- 🔒 **[Privacy Policy](PRIVACY_POLICY.md)** – How we handle your data (spoiler: we don't collect any)
+- ⚖️ **[Legal Disclaimer](LEGAL_DISCLAIMER.md)** – Terms, trademarks, and limitations
+- 🛡️ **[Security](SECURITY.md)** – Security practices and vulnerability reporting
+
+---
+
 ## ✨ **Features**
 
 ### 🎯 **Core Functionality**

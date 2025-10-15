@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Testing Feedback Form (screenshots/video)
+    url: https://forms.gle/dxXyizEu975v1xHd8
+    about: Best way to report bugs and suggestions during closed testing.
+  - name: Tester Discussion & Q&A (Google Group)
+    url: https://groups.google.com/g/chip-companion-testers
+    about: Ask questions, discuss findings, and see announcements.
